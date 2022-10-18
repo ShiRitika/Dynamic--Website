@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+
+        *{
+            margin: 0 ; padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: relative;
+            min-height: 100vh;
+            background : #ddd ;
+        }
+
+        .container .image-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            
+        }
+
+        .container .image-container .image{
+            height: 250px;
+            width: 350px;
+            border: 10px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .container .image-container .image img{
+           height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s linear; 
+        }
+
+        .container .image-container .image:hover img{
+            transform: scale(1.1);
+        }
+
+        .container .popup-img{
+            position: fixed;
+            top: 0;
+            margin-left: 200px;
+            background: rgba(0,0,0,.9);
+            height: 100%;
+            width: 300;
+            z-index: 100;
+            display: none;
+        }
+
+        .container .popup-img span{
+            position: absolute;
+            top: 15px; right: -20px;
+            font-size: 50px;
+            font-weight: bolder;
+            color: #fff;
+            cursor: pointer;
+            z-index: 100;
+        } 
+         .container .popup-img img{
+            position: absolute;
+             margin-left: 350px;
+            top:50%; left:50%;
+            transform: translate(-50% , -50%);
+            border: 3px solid #fff;
+            border-radius: 5px;
+            width: 600px;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Gallery</h1>
+    <p style="text-align:center">find our exclusive collections!</p>
+    <div class="container" id="galleryId">
+        <div class="image-container">
+            <div class="image" >
+                 <img src="https://media.istockphoto.com/photos/gorgeous-woman-wearing-beautiful-maxi-dress-posing-against-wall-with-picture-id1324844508?k=20&m=1324844508&s=612x612&w=0&h=70Nmxswe7ANjKQPOBsHgraw4y74WnkoZ0r4HKmLgTtE=" alt="">
+            </div>
+            <div class="image" >
+                 <img src="https://media.istockphoto.com/photos/jumping-male-fashion-model-standing-in-white-plain-vneck-tshirt-and-picture-id1210130241?k=20&m=1210130241&s=612x612&w=0&h=Uk61u73lCmlsPpQUGIC6nOka5ThFKOgAFgbPLfBGAOE=" alt="">
+            </div>
+            <div class="image" >
+                 <img src="https://media.istockphoto.com/photos/indian-groom-on-white-background-picture-id1126372346?k=20&m=1126372346&s=612x612&w=0&h=kPLkn7NZzGaqQxhiR_8bC9RcsW1oUA6mlcJMTa7w6tg=" alt="">
+            </div>
+            <div class="image" >
+                 <img src="https://media.istockphoto.com/photos/portrait-of-beautiful-indian-girl-dressed-in-a-traditional-national-picture-id908676008?k=20&m=908676008&s=612x612&w=0&h=FwI4_cju4Vzxq90oH7tmuj3jQzuD9YhxQKQnCnbIxnU=" alt="">
+            </div>
+            <div class="image" >
+                 <img src="https://media.istockphoto.com/photos/beautiful-girl-dressed-like-a-little-princess-picture-id155143770?k=20&m=155143770&s=612x612&w=0&h=ojY6IFbexLZw71yPnKwDNnz0pC9XkOio5_Tfjx6Zu5U=" alt="">
+            </div>
+            <div class="image" >
+                 <img src="https://media.istockphoto.com/photos/cute-child-in-ethnic-wear-and-giving-multiple-expression-picture-id1165270530?k=20&m=1165270530&s=612x612&w=0&h=AT5bm5-tsUj7HulYCJwn1xc0k6hZzs06hZB7_-U-Aw4=" alt="">
+            </div>
+        </div>
+        
+        <div class="popup-img">
+            <span>&times;</span>
+            <img src="https://media.istockphoto.com/photos/gorgeous-woman-wearing-beautiful-maxi-dress-posing-against-wall-with-picture-id1324844508?k=20&m=1324844508&s=612x612&w=0&h=70Nmxswe7ANjKQPOBsHgraw4y74WnkoZ0r4HKmLgTtE=" alt="">
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll(".image-container img").forEach(image => {
+            image.onclick = () => {
+                document.querySelector(".popup-img").style.display = 'block';
+                document.querySelector(".popup-img img").src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector(".popup-img span").onclick = () =>{
+            document.querySelector(".popup-img").style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>

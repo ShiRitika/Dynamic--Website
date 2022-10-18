@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Login</title>
+ 
+    <link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> {{!-- here we are adding bootstrap css --}}
+
+    <script src="..\jq\jquery.js" type="text/javascript"></script>{{!-- always put jqueryat top --}}
+    <link rel="stylesheet" href="css/style.css"> {{!-- here we are adding css --}}
+    <script src="..\js\bootstrap.js" type="text/javascript"></script>
+    <!--Stylesheet-->
+    <style media="screen">
+body{
+    background-image: url("https://media.istockphoto.com/photos/background-with-wooden-table-and-dark-wall-picture-id1164474311?k=20&m=1164474311&s=612x612&w=0&h=9dRA2gadvJnrqLfF6BSOzPfBZRc9wZq2FjA-BXGBTWY=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+form{
+    margin-top: 50px;
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+h1{
+  margin-top: 20px;
+}
+
+    </style>
+</head>
+
+
+
+<body>
+
+<h1>Welcome to DRESS & GRACE</h1>
+
+    
+     <form action="/login" method="POST">
+        <h3>Login Here</h3>
+
+        <label for="username">E-mail</label>
+        <input type="email" placeholder="e-mail" id="username" name="email">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password">
+
+        <button type="submit" class="button">Log In</button><br /><br />
+        {{!-- <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div> --}}
+        <div style="text-align :center" class="nav-item">
+          If not Registered!
+        <a class="nav-link" href="/register"><strong><u>Click here</u></strong></a>
+        </div>
+    </form>
+
+    <script>
+        //Program to disable or enable a button using javascript
+        let input = document.querySelector("#username"); //selecting all input fields
+        let button = document.querySelector(".button"); //selecting all buttons
+        button.disabled = true; //setting button state to disabled
+        input.addEventListener("change", inputData);//for input field value
+        function inputData() {
+            if (document.querySelector("#username").value === "") {
+                button.disabled = true; //button remains disabled
+                } else {
+                    button.disabled = false; //button is enabled
+                }
+            }
+
+    </script>
+</body>
+</html>
