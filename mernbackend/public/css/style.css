@@ -1,170 +1,179 @@
-h1{
-    color: rgb(220, 57, 20);
-    text-align: center;
+h1 {
+  color: rgb(220, 57, 20);
+  text-align: center;
 }
 
-
-body{
-    background-color: #62e4e9;
+body {
+  background-color: #c4e8e9;
 }
 
-
-    
-p{
-    font-weight: bold;
+p {
+  font-weight: bold;
 }
 
-html{
-    scroll-behavior: smooth; /* css property for smothing scrolling */
+html {
+  scroll-behavior: smooth; /* css property for smothing scrolling */
 }
-
 
 /*----------code for index------------*/
-h1{
-    margin-top: 10px;
-    color: #c3230e;
-     font-family: 'Droid serif', serif;
-      font-size: 36px; font-weight: 600;
-       font-style: bold;
-        line-height: 44px; margin: 0 0 12px;
-         text-align: center;
+h1 {
+  margin-top: 10px;
+  color: #c3230e;
+  font-family: "Droid serif", serif;
+  font-size: 36px;
+  font-weight: 600;
+  font-style: bold;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center;
 }
-#shopnow{
-    margin-top: 10px;
-    color: #887e10;
-     font-family: 'Droid serif', serif;
-      font-size: 36px; font-weight: 550;
-       font-style: italic;
-        line-height: 44px; margin: 0 0 12px;
-         text-align: center;
+#shopnow {
+  margin-top: 10px;
+  color: #887e10;
+  font-family: "Droid serif", serif;
+  font-size: 36px;
+  font-weight: 550;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center;
 }
 
-#hurry{
-    color: #887e10; 
-    font-family: 'Rouge Script', cursive; 
-    font-size: 40px; 
-    font-weight: normal;
-     line-height: 48px; 
-     margin: 0 0 100px; 
-     text-align: center; 
-     text-shadow: 1px 1px 2px #082b34;
-     margin-top: 10px;
+#hurry {
+  color: #887e10;
+  font-family: "Rouge Script", cursive;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #082b34;
+  margin-top: 10px;
 }
 /*------------------code for about start-----------------*/
 .row-container {
-    position: relative;
-    text-align: center;
-    color: black;
+  position: relative;
+  text-align: center;
+  color: black;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /*----------------------code for about ends-------------------- */
 
-
 /*-------------code for navbar start------------- */
 
-.navbar navbar-expand-lg navbar-light bg-light{
-    color: #44a2f6;
+.navbar navbar-expand-lg navbar-light bg-light {
+  color: #44a2f6;
 }
 
 /* Modify brand and text color */
 .navbar-nav .nav-item,
 .navbar .nav-link {
-    color: white;
+  color: white;
 }
-
-
 
 /*-------------------code for services------------------------*/
-.our-services:hover h4 ,
-.our-services:hover p{
-    color: #fff;
+.our-services:hover h4,
+.our-services:hover p {
+  color: #fff;
 }
 
-.womens:hover{
-    box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
-    cursor: pointer;
-    background-image: linear-gradient(-45deg, #49d0da 0% ,#210c59 50%);
+.womens:hover {
+  box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #49d0da 0%, #210c59 50%);
 }
 
-.mens:hover{
-    box-shadow: 0 0 25px rgba(33, 39, 221, 0.2);
-    cursor: pointer;
-    background-image: linear-gradient(-45deg ,#f33474 0% , #f55b2a 50%);
+.mens:hover {
+  box-shadow: 0 0 25px rgba(33, 39, 221, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #f33474 0%, #f55b2a 50%);
 }
 
-
-.kids:hover{
-    box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
-    cursor: pointer;
-    background-image: linear-gradient(-45deg, #5035ec 0% ,#44a2f6 50%);
+.kids:hover {
+  box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #5035ec 0%, #44a2f6 50%);
 }
 
-.brands:hover{
-    box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
-    cursor: pointer;
-    background-image:linear-gradient(-45deg ,#fd7f30 0% ,#fdb642 50%);
+.brands:hover {
+  box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fd7f30 0%, #fdb642 50%);
 }
 
-.ethinic:hover{
-    box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
-    cursor: pointer;
-    background-image:linear-gradient(-45deg ,#974eff 0% ,#5a57fb 50%);
+.ethinic:hover {
+  box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #974eff 0%, #5a57fb 50%);
 }
 
-.offers:hover{
-    box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
-    cursor: pointer;
-    background-image:linear-gradient(-45deg ,#974e49 0% ,#5a555a 50%);
+.offers:hover {
+  box-shadow: 0 0 25px rgba(20, 27, 201, 0.2);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #974e49 0%, #5a555a 50%);
 }
 /*-------------------------code for services end---------------------*/
 
-
 /* -----for contact us page---m */
-#contact-us{
-    text-align: center;
+#contact-us {
+  text-align: center;
 }
 
 /*----------code for contact us page close---------------*/
 
-#contactId , #serviceId{
-    margin-bottom: 80px;
+#contactId,
+#serviceId {
+  margin-bottom: 80px;
 }
-
 
 /*-----------------code for registration page start------------------*/
 
 .gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-    }
-    .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-    }
+  /* fallback for old browsers */
+  background: #84fab0;
 
-    /*-------------------code for register page end---------------*/
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(132, 250, 176, 0.5),
+    rgba(143, 211, 244, 0.5)
+  );
 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(132, 250, 176, 0.5),
+    rgba(143, 211, 244, 0.5)
+  );
+}
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
 
-    .error {
-        color: red;
-        margin: 0px;
-        text-align: left;
-      }
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(132, 250, 176, 1),
+    rgba(143, 211, 244, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(132, 250, 176, 1),
+    rgba(143, 211, 244, 1)
+  );
+}
+
+/*-------------------code for register page end---------------*/
+
+.error {
+  color: red;
+  margin: 0px;
+  text-align: left;
+}
